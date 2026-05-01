@@ -66,9 +66,9 @@ const Register = () => {
 
     return (
         <div className=''>
-           <div className="card mx-auto border-2 border-white text-white py-8 w-full max-w-md shrink-0 shadow-2xl">
-                <h3 className='text-3xl text-center font-bold'>Create an Account</h3>
-                <p className='text-center'>Please Register</p>
+           <div className="card mx-auto border-2 border-white py-8 w-full max-w-md shrink-0 shadow-2xl">
+                <h3 className='text-3xl text-center text-white font-bold'>Create an Account</h3>
+                <p className='text-center text-white'>Please Register</p>
                 <form onSubmit={handleSubmit(handleRegistration)} className="card-body">
                     <fieldset className="fieldset space-y-2">
                         <label className="label text-white">Name</label>

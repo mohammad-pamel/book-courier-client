@@ -26,12 +26,12 @@ const Login = () => {
 
     return (
         <div>
-            <div className="card text-white border-2 py-8 w-full max-w-sm mx-auto shrink-0 shadow-2xl">
-                <h3 className='text-3xl text-center font-bold'>Welcome Back</h3>
-                <p className='text-center'>Please Login</p>
+            <div className="card border-2 py-8 w-full max-w-sm mx-auto shrink-0 shadow-2xl">
+                <h3 className='text-3xl text-white text-center font-bold'>Welcome Back</h3>
+                <p className='text-center text-white'>Please Login</p>
                 <form onSubmit={handleSubmit(handleLogin)} className="card-body">
                     <fieldset className="fieldset">
-                        <label className="label text-white">Email</label>
+                        <label className="label">Email</label>
                         <input type="email" {...register('email', {required: true})} className="input" placeholder="Email" />
                         {errors.email?.type==='required' && <p className='text-red-600'>Email is required</p>}
 
